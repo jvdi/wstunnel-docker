@@ -1,0 +1,12 @@
+version: '3'
+services:
+  wstunnel-server:
+    image: wstunnel:9.7.0
+    container_name: ws-srv
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      #local - not work
+      # - COMMAND=/usr/local/bin/wstunnel server ws://0.0.0.0:33344 --restrict-to "127.0.0.1:51820"
+      #external
+      - COMMAND=/usr/local/bin/wstunnel server ws://0.0.0.0:33344
