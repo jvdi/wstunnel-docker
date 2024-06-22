@@ -1,4 +1,4 @@
-# wstunnel-docker
+# wstunnel-docker v5
 docker image of wstunnel v5 - for run Client or Server Tunnel
 
 how i can build it and push to docker-hub:
