@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     network_mode: host
     environment:
-      #local - not work
-      # - COMMAND=/usr/local/bin/wstunnel server ws://0.0.0.0:33344 --restrict-to "127.0.0.1:51820"
+      #local
+      # - COMMAND=/usr/local/bin/wstunnel server ws://0.0.0.0:33344 --restrict-to 127.0.0.1:51820
       #external
       - COMMAND=/usr/local/bin/wstunnel server ws://0.0.0.0:33344
