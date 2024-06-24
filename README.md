@@ -21,6 +21,7 @@ ws : http - wss : https<br />
 version: '3'
 services:
   wstunnel-server:
+    # latest tag => v5.0
     image: javidi/wstunnel:latest
     container_name: ws-srv
     restart: unless-stopped

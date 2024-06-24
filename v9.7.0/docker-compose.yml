@@ -1,7 +1,8 @@
 version: '3'
 services:
   wstunnel-server:
-    image: wstunnel:9.7.0
+    # v9.7.0 tag => v9.7.0
+    image: javidi/wstunnel:v9.7.0
     container_name: ws-srv
     restart: unless-stopped
     network_mode: host
